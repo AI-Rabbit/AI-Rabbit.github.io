@@ -295,32 +295,6 @@ body.lang-switching [data-i18n] {
     flex-shrink: 0;
 }
 
-.hero-tags {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 2.5rem;
-    max-width: 820px;
-    animation: fadeUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.65s both;
-}
-
-.tag {
-    font-family: var(--font-mono);
-    font-size: 0.65rem;
-    letter-spacing: 0.05em;
-    color: var(--text-tertiary);
-    padding: 0.3rem 0.8rem;
-    border: 1px solid var(--border-light);
-    border-radius: 1px;
-    transition: all 0.3s ease;
-}
-
-.tag:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-}
-
 .hero-scroll-hint {
     position: absolute;
     bottom: 2rem;
@@ -864,11 +838,6 @@ main {
 @media (max-width: 480px) {
     .hero-name {
         font-size: 2.2rem;
-    }
-
-    .hero-tags {
-        flex-direction: column;
-        align-items: center;
     }
 
     .pub-filter {
