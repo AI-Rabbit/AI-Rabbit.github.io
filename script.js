@@ -16,7 +16,7 @@ const i18nData = {
         phdTitle: '信息与通信工程博士',
         phdOrg: '华中科技大学',
         phdDate: '2021年9月 — 至今',
-        phdDesc1: '导师：殷海帆<strong>教授</strong><em>（国家青年人才项目引进、中国青年五四奖章）</em>',
+        phdDesc1: '导师：尹海帆<strong>教授</strong><em>（国家青年人才项目引进、中国青年五四奖章）</em>',
         phdDesc2: '加权平均分：<strong>88.48 / 100</strong> · 排名：<strong>3 / 18</strong>',
         phdDesc3: '华中科技大学优秀研究生 · 华中科技大学学业奖学金（×4）',
         bengTitle: '自动化工学学士',
