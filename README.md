@@ -1,2 +1,3 @@
-# AI-Rabbit.github.io
-Deployment of my weblog.
+# ai-rabbit.github.io
+
+我的学术主页

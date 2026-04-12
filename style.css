@@ -80,6 +80,54 @@ body {
     opacity: 0.6;
 }
 
+.lang-toggle {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 10000;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-primary);
+    background: var(--paper);
+    border: 1px solid var(--border);
+    padding: 0.45rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.lang-toggle:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-glow);
+    transform: translateY(-1px);
+}
+
+.lang-toggle:active {
+    transform: translateY(0);
+}
+
+body.lang-switching [data-i18n] {
+    opacity: 0.4;
+    transition: opacity 0.15s ease;
+}
+
+[data-i18n] {
+    transition: opacity 0.15s ease;
+}
+
+.hero-name.name-zh {
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    letter-spacing: 0.05em;
+}
+
+.hero-name-cn.name-en {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    letter-spacing: 0.02em;
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;

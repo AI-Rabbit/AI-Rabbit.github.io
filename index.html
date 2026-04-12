@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en" data-lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,17 +14,21 @@
     <div class="grain-overlay"></div>
     <div class="spectrum-line" id="spectrumLine"></div>
 
+    <button class="lang-toggle" id="langToggle" aria-label="Switch Language">
+        <span class="lang-label" data-i18n="langToggle">中文</span>
+    </button>
+
     <header class="hero">
         <div class="hero-inner">
             <div class="hero-photo-wrapper">
                 <img class="hero-photo" src="images/xilong.jpg" alt="Xilong Pei">
                 <div class="hero-photo-border"></div>
             </div>
-            <div class="hero-badge">Ph.D. Candidate</div>
-            <h1 class="hero-name">Xilong Pei</h1>
-            <p class="hero-name-cn">裴熙隆</p>
-            <p class="hero-affiliation">Huazhong University of Science and Technology</p>
-            <p class="hero-dept">School of Electronic Information and Communications</p>
+            <div class="hero-badge" data-i18n="badge">Ph.D. Candidate</div>
+            <h1 class="hero-name" data-i18n="heroName">Xilong Pei</h1>
+            <p class="hero-name-cn" data-i18n="heroNameCn">裴熙隆</p>
+            <p class="hero-affiliation" data-i18n="affiliation">Huazhong University of Science and Technology</p>
+            <p class="hero-dept" data-i18n="dept">School of Electronic Information and Communications</p>
             <div class="hero-links">
                 <a href="mailto:pei@hust.edu.cn" class="link-btn" aria-label="Email">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13L2 4"/></svg>
@@ -34,20 +38,20 @@
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.692 6.84a1.272 1.272 0 110 2.544 1.272 1.272 0 010-2.544zm-.352 3.668h.704v7.636h-.704V10.508zm3.392 0h.704v1.392c.448-.968 1.452-1.58 2.544-1.58 1.536 0 2.652 1.136 2.652 2.94v4.884h-.704v-4.66c0-1.472-.78-2.356-2.06-2.356-1.14 0-2.432.856-2.432 2.788v4.228h-.704V10.508z"/></svg>
                     ORCID
                 </a>
-                <a href="https://github.com/" class="link-btn" target="_blank" rel="noopener" aria-label="Google Scholar">
+                <a href="https://scholar.google.com/citations?user=McR-a_2N7IwC&hl=zh-CN" class="link-btn" target="_blank" rel="noopener" aria-label="Google Scholar">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.637 13.288 15.024 12 12 12c-3.024 0-5.637 1.288-6.758 1.769zM12 14c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
                     Scholar
                 </a>
             </div>
             <div class="hero-tags">
-                <span class="tag">Intelligent Reflecting Surface</span>
-                <span class="tag">Dynamic Metasurface Antenna</span>
-                <span class="tag">Beamforming</span>
-                <span class="tag">Wireless Communications</span>
+                <span class="tag" data-i18n="tag1">Intelligent Reflecting Surface</span>
+                <span class="tag" data-i18n="tag2">Dynamic Metasurface Antenna</span>
+                <span class="tag" data-i18n="tag3">Beamforming</span>
+                <span class="tag" data-i18n="tag4">Wireless Communications</span>
             </div>
         </div>
         <div class="hero-scroll-hint">
-            <span>Scroll</span>
+        <span data-i18n="scrollHint">Scroll</span>
             <div class="scroll-line"></div>
         </div>
     </header>
@@ -55,48 +59,48 @@
     <main>
         <section id="education" class="section">
             <div class="section-header">
-                <h2 class="section-title">Education</h2>
+                <h2 class="section-title" data-i18n="eduTitle">Education</h2>
                 <div class="section-rule"></div>
             </div>
             <div class="entry">
                 <div class="entry-header">
                     <div>
-                        <h3 class="entry-title">Ph.D. in Information and Communication Engineering</h3>
-                        <p class="entry-org">Huazhong University of Science and Technology</p>
+                <h3 class="entry-title" data-i18n="phdTitle">Ph.D. in Information and Communication Engineering</h3>
+                        <p class="entry-org" data-i18n="phdOrg">Huazhong University of Science and Technology</p>
                     </div>
-                    <span class="entry-date">Sep 2021 — Present</span>
+                    <span class="entry-date" data-i18n="phdDate">Sep 2021 — Present</span>
                 </div>
                 <div class="entry-body">
-                    <p>Advisor: Prof. <strong>Haifan Yin</strong> <em>(Recruited via National Youth Talent Program, China Youth May Fourth Medal)</em></p>
-                    <p>Weighted Average: <strong>88.48 / 100</strong> · Rank: <strong>3 / 18</strong></p>
-                    <p>HUST Outstanding Graduate Student · HUST Academic Scholarship (×4)</p>
+                    <p data-i18n="phdDesc1">Advisor: Prof. <strong>Haifan Yin</strong> <em>(Recruited via National Youth Talent Program, China Youth May Fourth Medal)</em></p>
+                    <p data-i18n="phdDesc2">Weighted Average: <strong>88.48 / 100</strong> · Rank: <strong>3 / 18</strong></p>
+                    <p data-i18n="phdDesc3">HUST Outstanding Graduate Student · HUST Academic Scholarship (×4)</p>
                 </div>
             </div>
             <div class="entry">
                 <div class="entry-header">
                     <div>
-                        <h3 class="entry-title">B.Eng. in Automation</h3>
-                        <p class="entry-org">Huazhong University of Science and Technology</p>
+                <h3 class="entry-title" data-i18n="bengTitle">B.Eng. in Automation</h3>
+                        <p class="entry-org" data-i18n="bengOrg">Huazhong University of Science and Technology</p>
                     </div>
-                    <span class="entry-date">Sep 2017 — Jun 2021</span>
+                    <span class="entry-date" data-i18n="bengDate">Sep 2017 — Jun 2021</span>
                 </div>
                 <div class="entry-body">
-                    <p>Weighted Average: <strong>92.3 / 100</strong> · Rank: <strong>2 / 170</strong></p>
-                    <p>National Scholarship (×2) · National Encouragement Scholarship · HUST Outstanding Student (×4) · HUST Honors Bachelor's Degree · HUST Outstanding Graduate</p>
+                    <p data-i18n="bengDesc1">Weighted Average: <strong>92.3 / 100</strong> · Rank: <strong>2 / 170</strong></p>
+                    <p data-i18n="bengDesc2">National Scholarship (×2) · National Encouragement Scholarship · HUST Outstanding Student (×4) · HUST Honors Bachelor's Degree · HUST Outstanding Graduate</p>
                 </div>
             </div>
         </section>
 
         <section id="publications" class="section">
             <div class="section-header">
-                <h2 class="section-title">Publications</h2>
+                <h2 class="section-title" data-i18n="pubTitle">Publications</h2>
                 <div class="section-rule"></div>
             </div>
             <div class="pub-filter">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="first">First Author</button>
-                <button class="filter-btn" data-filter="journal">Journal</button>
-                <button class="filter-btn" data-filter="conference">Conference</button>
+                <button class="filter-btn active" data-filter="all" data-i18n="filterAll">All</button>
+                <button class="filter-btn" data-filter="first" data-i18n="filterFirst">First Author</button>
+                <button class="filter-btn" data-filter="journal" data-i18n="filterJournal">Journal</button>
+                <button class="filter-btn" data-filter="conference" data-i18n="filterConference">Conference</button>
             </div>
             <ol class="pub-list">
                 <li class="pub-item first journal" data-type="first journal">
@@ -201,62 +205,62 @@
 
         <section id="projects" class="section">
             <div class="section-header">
-                <h2 class="section-title">Research Projects</h2>
+                <h2 class="section-title" data-i18n="projTitle">Research Projects</h2>
                 <div class="section-rule"></div>
             </div>
             <div class="entry">
                 <div class="entry-header">
                     <div>
-                        <h3 class="entry-title">2.6 GHz RIS Algorithm Design and Field Trial Validation</h3>
-                        <p class="entry-org">Key Contributor</p>
+                        <h3 class="entry-title" data-i18n="proj1Title">2.6 GHz RIS Algorithm Design and Field Trial Validation</h3>
+                        <p class="entry-org" data-i18n="proj1Role">Key Contributor</p>
                     </div>
-                    <span class="entry-date">Sep 2022 — Jun 2024</span>
+                    <span class="entry-date" data-i18n="proj1Date">Sep 2022 — Jun 2024</span>
                 </div>
                 <div class="entry-body">
-                    <p>Focused on RIS deployment in commercial 5G networks to enhance coverage in weak-signal areas. Developed a two-stage spatial-oversampling codebook beamforming algorithm based on channel spatial structure, significantly reducing search complexity while maintaining excellent performance. The system achieved <strong>4–7 dB outdoor signal gain</strong> in China Mobile's live network.</p>
+                    <p data-i18n="proj1Desc">Focused on RIS deployment in commercial 5G networks to enhance coverage in weak-signal areas. Developed a two-stage spatial-oversampling codebook beamforming algorithm based on channel spatial structure, significantly reducing search complexity while maintaining excellent performance. The system achieved <strong>4–7 dB outdoor signal gain</strong> in China Mobile's live network.</p>
                 </div>
             </div>
             <div class="entry">
                 <div class="entry-header">
                     <div>
-                        <h3 class="entry-title">RIS-Based Anti-Jamming Communication System</h3>
-                        <p class="entry-org">Key Contributor</p>
+                        <h3 class="entry-title" data-i18n="proj2Title">RIS-Based Anti-Jamming Communication System</h3>
+                        <p class="entry-org" data-i18n="proj2Role">Key Contributor</p>
                     </div>
-                    <span class="entry-date">Sep 2019 — Dec 2022</span>
+                    <span class="entry-date" data-i18n="proj2Date">Sep 2019 — Dec 2022</span>
                 </div>
                 <div class="entry-body">
-                    <p>Developed a 5.8 GHz RIS-based anti-jamming wireless communication system. As a core member, designed efficient parallel multi-channel RIS control systems and FPGA-embedded control programs for precise RIS manipulation. The system passed acceptance by a research institute at NUDT, demonstrating practical engineering value.</p>
+                    <p data-i18n="proj2Desc">Developed a 5.8 GHz RIS-based anti-jamming wireless communication system. As a core member, designed efficient parallel multi-channel RIS control systems and FPGA-embedded control programs for precise RIS manipulation. The system passed acceptance by a research institute at NUDT, demonstrating practical engineering value.</p>
                 </div>
             </div>
             <div class="entry">
                 <div class="entry-header">
                     <div>
-                        <h3 class="entry-title">Massive MIMO High-Performance Transmission Theory and Technology</h3>
-                        <p class="entry-org">Key Contributor</p>
+                        <h3 class="entry-title" data-i18n="proj3Title">Massive MIMO High-Performance Transmission Theory and Technology</h3>
+                        <p class="entry-org" data-i18n="proj3Role">Key Contributor</p>
                     </div>
-                    <span class="entry-date">Sep 2023 — Present</span>
+                    <span class="entry-date" data-i18n="proj3Date">Sep 2023 — Present</span>
                 </div>
                 <div class="entry-body">
-                    <p>Investigating high-performance low-complexity implementations for massive MIMO using Dynamic Metasurface Antennas (DMA). Established a DMA communication model considering Lorentzian constraints and arbitrary discrete phase shifts. Proposed nearest-point projection and optimal beamforming algorithms, deriving closed-form expressions for average SNR and performance bounds, validated via Monte Carlo simulations. Submitted to a top-tier journal.</p>
+                    <p data-i18n="proj3Desc">Investigating high-performance low-complexity implementations for massive MIMO using Dynamic Metasurface Antennas (DMA). Established a DMA communication model considering Lorentzian constraints and arbitrary discrete phase shifts. Proposed nearest-point projection and optimal beamforming algorithms, deriving closed-form expressions for average SNR and performance bounds, validated via Monte Carlo simulations. Submitted to a top-tier journal.</p>
                 </div>
             </div>
             <div class="entry">
                 <div class="entry-header">
                     <div>
-                        <h3 class="entry-title">Amplifier Circuit Performance & Fault Tester</h3>
-                        <p class="entry-org">Project Leader</p>
+                        <h3 class="entry-title" data-i18n="proj4Title">Amplifier Circuit Performance & Fault Tester</h3>
+                        <p class="entry-org" data-i18n="proj4Role">Project Leader</p>
                     </div>
-                    <span class="entry-date">Jun 2018 — Sep 2019</span>
+                    <span class="entry-date" data-i18n="proj4Date">Jun 2018 — Sep 2019</span>
                 </div>
                 <div class="entry-body">
-                    <p>National Undergraduate Electronics Design Contest (2019, Problem D). Led the team as project leader and FPGA development lead at the EIE Innovation Center. Independently completed embedded programming, signal acquisition/processing, and data display modules, securing the <strong>National First Prize</strong>.</p>
+                    <p data-i18n="proj4Desc">National Undergraduate Electronics Design Contest (2019, Problem D). Led the team as project leader and FPGA development lead at the EIE Innovation Center. Independently completed embedded programming, signal acquisition/processing, and data display modules, securing the <strong>National First Prize</strong>.</p>
                 </div>
             </div>
         </section>
 
         <section id="patents" class="section">
             <div class="section-header">
-                <h2 class="section-title">Patents</h2>
+                <h2 class="section-title" data-i18n="patTitle">Patents</h2>
                 <div class="section-rule"></div>
             </div>
             <ol class="patent-list">
@@ -269,32 +273,32 @@
 
         <section id="awards" class="section">
             <div class="section-header">
-                <h2 class="section-title">Honors & Awards</h2>
+                <h2 class="section-title" data-i18n="awardsTitle">Honors & Awards</h2>
                 <div class="section-rule"></div>
             </div>
             <div class="awards-grid">
                 <div class="award-card">
                     <div class="award-icon">🏆</div>
-                    <div class="award-level">National First Prize</div>
-                    <div class="award-name">17th "Challenge Cup" National Extracurricular Academic Science & Technology Works Competition</div>
+                    <div class="award-level" data-i18n="award1Level">National First Prize</div>
+                    <div class="award-name" data-i18n="award1Name">17th "Challenge Cup" National Extracurricular Academic Science & Technology Works Competition</div>
                     <div class="award-year">Mar 2022</div>
                 </div>
                 <div class="award-card">
                     <div class="award-icon">🥇</div>
-                    <div class="award-level">National Gold Award</div>
-                    <div class="award-name">7th China International "Internet+" Innovation & Entrepreneurship Competition</div>
+                    <div class="award-level" data-i18n="award2Level">National Gold Award</div>
+                    <div class="award-name" data-i18n="award2Name">7th China International "Internet+" Innovation & Entrepreneurship Competition</div>
                     <div class="award-year">Oct 2021</div>
                 </div>
                 <div class="award-card">
                     <div class="award-icon">⭐</div>
-                    <div class="award-level">Grand Prize</div>
-                    <div class="award-name">2021 China-US Youth Maker Competition, Wuhan Division</div>
+                    <div class="award-level" data-i18n="award3Level">Grand Prize</div>
+                    <div class="award-name" data-i18n="award3Name">2021 China-US Youth Maker Competition, Wuhan Division</div>
                     <div class="award-year">Sep 2021</div>
                 </div>
                 <div class="award-card">
                     <div class="award-icon">🎯</div>
-                    <div class="award-level">National First Prize</div>
-                    <div class="award-name">National Undergraduate Electronics Design Contest</div>
+                    <div class="award-level" data-i18n="award4Level">National First Prize</div>
+                    <div class="award-name" data-i18n="award4Name">National Undergraduate Electronics Design Contest</div>
                     <div class="award-year">Dec 2019</div>
                 </div>
             </div>
@@ -302,21 +306,21 @@
 
         <section id="skills" class="section">
             <div class="section-header">
-                <h2 class="section-title">Skills</h2>
+                <h2 class="section-title" data-i18n="skillsTitle">Skills</h2>
                 <div class="section-rule"></div>
             </div>
             <div class="skills-grid">
                 <div class="skill-group">
-                    <h3>Research</h3>
+                    <h3 data-i18n="skillResearch">Research</h3>
                     <div class="skill-tags">
-                        <span>RIS / DMA Beamforming</span>
-                        <span>Wireless Communications</span>
-                        <span>Array Signal Processing</span>
-                        <span>Communication Principles</span>
+                        <span data-i18n="skillR1">RIS / DMA Beamforming</span>
+                        <span data-i18n="skillR2">Wireless Communications</span>
+                        <span data-i18n="skillR3">Array Signal Processing</span>
+                        <span data-i18n="skillR4">Communication Principles</span>
                     </div>
                 </div>
                 <div class="skill-group">
-                    <h3>Programming</h3>
+                    <h3 data-i18n="skillProg">Programming</h3>
                     <div class="skill-tags">
                         <span>C</span>
                         <span>Python</span>
@@ -325,7 +329,7 @@
                     </div>
                 </div>
                 <div class="skill-group">
-                    <h3>Tools</h3>
+                    <h3 data-i18n="skillTools">Tools</h3>
                     <div class="skill-tags">
                         <span>Modelsim</span>
                         <span>Vivado</span>
@@ -334,10 +338,10 @@
                     </div>
                 </div>
                 <div class="skill-group">
-                    <h3>Languages</h3>
+                    <h3 data-i18n="skillLang">Languages</h3>
                     <div class="skill-tags">
-                        <span>Chinese (Native)</span>
-                        <span>English (CET-6: 610)</span>
+                        <span data-i18n="skillL1">Chinese (Native)</span>
+                        <span data-i18n="skillL2">English (CET-6: 610)</span>
                     </div>
                 </div>
             </div>
@@ -348,13 +352,13 @@
         <div class="footer-spectrum"></div>
         <div class="footer-inner">
             <p class="footer-name">Xilong Pei · 裴熙隆</p>
-            <p class="footer-affiliation">Huazhong University of Science and Technology</p>
+            <p class="footer-affiliation" data-i18n="affiliation">Huazhong University of Science and Technology</p>
             <p class="footer-links">
                 <a href="mailto:pei@hust.edu.cn">pei@hust.edu.cn</a>
                 <span class="footer-sep">·</span>
                 <a href="https://orcid.org/0000-0001-8397-3569" target="_blank" rel="noopener">ORCID</a>
             </p>
-            <p class="footer-copy">&copy; 2025 Xilong Pei. All rights reserved.</p>
+            <p class="footer-copy">&copy; 2026 Xilong Pei. All rights reserved.</p>
         </div>
     </footer>
 
