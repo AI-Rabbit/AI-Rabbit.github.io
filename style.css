@@ -244,8 +244,15 @@ body.lang-switching [data-i18n] {
     font-weight: 300;
     font-style: italic;
     color: var(--text-secondary);
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.25rem;
     animation: fadeUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.5s both;
+}
+
+.hero-lab-logo {
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 2.5rem;
+    animation: fadeUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.52s both;
 }
 
 .hero-links {
