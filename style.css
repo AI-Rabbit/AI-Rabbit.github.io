@@ -249,6 +249,7 @@ body.lang-switching [data-i18n] {
 }
 
 .hero-lab-logo {
+    display: block;
     max-width: 350px;
     height: auto;
     margin-bottom: 2.5rem;
